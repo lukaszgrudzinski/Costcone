@@ -13,6 +13,7 @@ namespace CostconeDataManager.Models
         public string ExternalAccessToken { get; set; }
     }
 
+
     public class ChangePasswordBindingModel
     {
         [Required]
@@ -32,6 +33,13 @@ namespace CostconeDataManager.Models
         public string ConfirmPassword { get; set; }
     }
 
+    public class LocationBindingModel
+    {
+        [Required]
+        public double lattitude { get; set; }
+        [Required]
+        public double longtitude { get; set; }
+    }
     public class RegisterBindingModel
     {
         [Required]

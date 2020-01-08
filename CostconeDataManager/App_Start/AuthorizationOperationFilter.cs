@@ -24,6 +24,14 @@ namespace CostconeDataManager.App_Start
                 required = false,
                 type = "string"
             });
+            if (operation.operationId == "Location_Get")  // controller and action name
+            {
+                operation.
+                consumes = new List<string>
+                    {
+                        "application/json"
+                    };
+            }
         }
     }
 }
